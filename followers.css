@@ -1,1 +1,67 @@
-/*# sourceMappingURL=followers.css.map */
+header {
+  width: 1440px;
+  height: 72px;
+  opacity: 1;
+  background: #ffffff;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1019607843);
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-left: 116px;
+  gap: 40px;
+  position: fixed;
+}
+header .logo {
+  width: 152px;
+  height: 32px;
+  opacity: 1;
+  cursor: pointer;
+}
+header nav .search {
+  width: 838px;
+  height: 40px;
+}
+header nav .search input {
+  width: 838px;
+  height: 40px;
+  gap: 16px;
+  opacity: 1;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: border-color 0.2s ease;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  position: relative;
+  margin-top: -2px;
+  display: flex;
+}
+header nav .search input:focus {
+  border-color: #70c05b;
+}
+header nav .search input:hover {
+  border-color: #70c05b;
+}
+header nav .search img {
+  position: absolute;
+  transform: translateY(-60%) translateX(-130%);
+  top: 55%;
+}
+header .cart {
+  width: 138px;
+  height: 72px;
+  opacity: 1;
+  gap: 24px;
+  display: flex;
+  margin-top: -8px;
+}
+header .cart img {
+  width: 65px;
+  height: 50px;
+  opacity: 1;
+  gap: 8px;
+}/*# sourceMappingURL=followers.css.map */
