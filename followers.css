@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #FBF8EC;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  padding: 20px 116px 0px 116px;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+header .logo {
+  width: 152px;
+  height: 32px;
+  opacity: 1;
+  cursor: pointer;
+}
+header nav .search {
+  width: 838px;
+  height: 40px;
+  position: relative;
+}
+header nav .search input {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: border-color 0.2s ease;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: -2px;
+  display: flex;
+}
+header nav .search input:focus, header nav .search input:hover {
+  border-color: #70c05b;
+}
+header nav .search img {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-60%) translateX(-130%);
+}
+header .cart {
+  width: 138px;
+  height: 72px;
+  display: flex;
+  gap: 24px;
+  margin-top: -8px;
+}
+header .cart img {
+  width: 65px;
+  height: 50px;
+  gap: 8px;
+}
+
+.wrapper {
+  flex-direction: column;
+  padding-top: 100px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin-left: 116px;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: #333;
+}
+.breadcrumb span {
+  margin: 0 0.3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.filters .filter {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f9;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  position: relative;
+  color: #333;
+}
+.filters .filter.green {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.close {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.content-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 48px 0px 60px 0px;
+  font-family: sans-serif;
+}
+
+.load-more {
+  padding: 12px 24px;
+  background-color: #f4f4f9;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pagination button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #444;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.pagination button:hover {
+  background-color: #ffe5e5;
+  color: #d62828;
+  transform: translateY(-2px);
+}
+.pagination button:active, .pagination button.active {
+  background-color: #ff4d4d;
+  color: white;
+  transform: scale(0.95);
+}
+
+footer {
+  width: 100%;
+  background-color: #f9f4e2;
+  background-image: url(/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px 116px;
+}
+footer .info {
+  width: 1440px;
+  height: 126px;
+  display: flex;
+  flex-direction: row;
+  margin: 24px 0px 0px 20px;
+}
+footer .info .img {
+  width: 64px;
+  height: 44px;
+  cursor: pointer;
+}
+footer .info ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 13px 0px 0px 40px;
+}
+footer .info ul li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+footer .info ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer .info .img2 {
+  width: 144px;
+  height: 24px;
+  margin: 10px 0px 0px 133px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+footer .contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 152;
+  height: 24;
+}
+footer .contacts img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin: 10px 0px 0px 40px;
+}
+footer .a {
+  margin-top: 13px;
+  text-decoration: none;
+  margin-right: 116px;
+  color: black;
+  background-repeat: no-repeat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  vertical-align: middle;
+}/*# sourceMappingURL=followers.css.map */
